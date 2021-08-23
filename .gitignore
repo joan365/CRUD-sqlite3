@@ -1,0 +1,10 @@
+# nodejs
+/node_modules
+# Visual studio
+*.code-workspace
+# General
+.DS_Store
+# Thumbnails
+._*
+# Dades de l'aplicació
+/database/*.db

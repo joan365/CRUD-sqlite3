@@ -1,0 +1,65 @@
+<%- include( 'partials/_header'); -%>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Adreça</th>
+                        <th>Telèfon</th>
+                        <th>Accions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if (data && data.length > 0) { %> 
+                        <% for (var i =0; i < data.length; i++){ %>
+                            <tr>
+                                <td><%= data[i].id  %> </td>
+                                <td><%= data[i].name  %> </td>
+                                <td><%= data[i].address  %> </td>
+                                <td><%= data[i].phone  %> </td>
+                                <td>
+                                    <a href="/delete/<%= data[i].id  %>" class="btn btn-danger">Baixa &nbsp;</a>
+                                    <a href="/update/<%= data[i].id  %>" class="btn btn-info">Editar  &nbsp;</a>
+                                </td>
+                            </tr>
+                        <% }  %> 
+                    <% } else { %> 
+                        <tr>
+                            <td colspan="5" class="text-center">SENSE DADES</td>
+                        </tr>
+                    
+                    <% } %> 
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-md-5">
+            <div class="card">
+                <div class=" card-body">
+                    <h5>Alta nou client</h5>
+
+                    <form action="/add" method="POST">
+                        <div class="form-group mb-2">
+                            <input type="text" name="name" placeholder="Nom usuari" class="form-control">
+                        </div>
+                        <div class="form-group  mb-2">
+                            <input type="text" name="address" placeholder="Adreça" class="form-control">
+                        </div>
+                        <div class="form-group  mb-2">
+                            <input type="text" name="phone" placeholder="Telèfon" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('partials/_peu'); -%>
+

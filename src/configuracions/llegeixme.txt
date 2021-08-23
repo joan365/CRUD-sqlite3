@@ -1,0 +1,15 @@
+Els nom dels fitxers de configuració van d'acord amb el contingut de la variable
+NODE_ENV. Si aquesta no existeix agafa el valor per defecte de development i 
+per tant el fitxer es dirà development.json
+
+La 'ubicació dels fitxers la podem modificar amb la variable d'entorn NODE_CONFIG_DIR.
+També podem modificar-ho des de l'aplicació abans de definir config.
+
+Veure wiki: https://github.com/lorenwest/node-config/wiki
+
+Una bona pràctica es no posar usuaris i pw en aquests fitxers, ja que si passen 
+per GITHUB poden arribar a ser públiuques.
+Per solucionar-ho en els fitxers config apuntem a valors definits en variables d'entorn
+que inicialitzarem amb un escript especific en el servidor de producció.
+
+Veure: https://codingsans.com/blog/node-config-best-practices
