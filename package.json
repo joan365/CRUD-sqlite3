@@ -1,11 +1,13 @@
 {
   "name": "sqlite-crud",
-  "version": "1.0.0",
-  "description": "Prectica amb sqlite",
-  "main": "src/app.js",
+  "version": "1.0.1",
+  "description": "Practica nodejs, express i sqlite",
+  "main": "src/app.js", 
   "scripts": {
     "dev": "nodemon src/app.js",
-    "pro": "NODE_ENV=produccio PROD_APP_PORT=3988 node src/app.js"
+    "dev_taules": "node database/crearTaules.js",
+    "pro": "NODE_ENV=produccio PROD_APP_PORT=3988 node src/app.js",
+    "pro_taules": "NODE_ENV=produccio node database/crearTaules.js"
   },
   "author": "Joan",
   "license": "ISC",

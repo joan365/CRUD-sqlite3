@@ -1,0 +1,2 @@
+Aqui hi van els logs de producció
+Veure script start.sh

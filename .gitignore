@@ -4,6 +4,7 @@
 *.code-workspace
 # General
 .DS_Store
+logs/app.*
 # Thumbnails
 ._*
 # Dades de l'aplicació

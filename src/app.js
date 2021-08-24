@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views')); //indiquem on son les plantille
 app.use(express.static(path.join(__dirname,'public')));
 
 //middlewares
-app.use(morgan('dev')); //mostra en el log del server les peticions rebudes
+app.use(morgan(config.get('morgan'))); //mostra en el log del server les peticions rebudes
 
 //Antic body-parser actualment ja inclos en express
 //Permet tractar des de req.body la informacó que envien els formularis
