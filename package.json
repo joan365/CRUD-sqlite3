@@ -5,7 +5,6 @@
   "main": "src/app.js", 
   "scripts": {
     "dev": "nodemon src/app.js",
-    "dev_taules": "node database/crearTaules.js",
     "pro": "NODE_ENV=produccio PROD_APP_PORT=3988 node src/app.js"
   },
   "author": "Joan",
