@@ -1,8 +1,8 @@
 {
   "name": "sqlite-crud",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Practica nodejs, express i sqlite3",
-  "main": "src/app.js", 
+  "main": "src/app.js",
   "scripts": {
     "dev": "nodemon src/app.js",
     "pro": "NODE_ENV=produccio PROD_APP_PORT=3988 node src/app.js"
