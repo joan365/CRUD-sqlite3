@@ -3,7 +3,6 @@
 # --------
 # 
 # 
-
 #!/bin/bash
 cd /volume1/nodejs/CRUD-sqlite3
 npm run syno >> logs/app.log &
